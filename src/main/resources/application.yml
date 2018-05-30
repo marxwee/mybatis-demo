@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://192.168.137.100:3306/test?useSSL=false
+      username: normal
+      password: Abcd-1234
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+
+mybatis:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: cn.edu.hzau.mybatis.demo.model
+  configuration:
+    map-underscore-to-camel-case: true
